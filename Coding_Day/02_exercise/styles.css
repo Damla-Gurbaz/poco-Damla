@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    padding: 10px 0;
+    background-color: #f1f8f2;
+    color: rgb(12, 11, 11);
+    text-align: center;
+}
+
+header h1 {
+    text-align: left;
+    padding-left: 20px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+#logo {
+    height: 50px;
+    width: auto;
+    vertical-align: middle;
+
+}
+
+
+
+.container {
+    display: flex;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    flex: 2;
+    padding: 20px;
+    background-color: #e9e9e9;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+    display: block;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+}
+
+main {
+    width: 280%;
+    flex: 6;
+    padding: 20px;
+    background-color: white;
+    margin-right: 10px;
+    background-color: #f5f0f0;
+}
+
+article {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    background-color: #ffffff;
+}
+article h2{
+    color: #51b281;
+}
+
+article p{
+    color: #d1dad6;
+    font-weight: bold;
+}
+
+aside {
+    width: 5%;
+    flex: 1;
+    padding: 10px;
+    background-color: #e9e9e9;
+}
+
+aside .ad {
+    border: 1px solid #ddd;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+footer {
+    background-color: #4CAF50;
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 980px) {
+    .container {
+        flex-direction: column;
+    }
+
+    nav, main, aside {
+        width: 100%;
+    }
+
+    nav, aside {
+        margin: 0;
+    }
+
+    main {
+        margin-bottom: 20px;
+    }
+}

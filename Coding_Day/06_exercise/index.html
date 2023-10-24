@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekdays Converter</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-top: 50px;
+        }
+
+        input {
+            width: 250px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <label for="numbers">Enter numbers (1-7) separated by commas:</label>
+        <input type="text" id="numbers" placeholder="e.g. 1,4,6,3,2">
+        <button onclick="convertToWeekdays()">Convert to Weekdays</button>
+        <div id="output"></div>
+    </div>
+
+    <script>
+        function weekNumbersToWords(numbers) {
+            return numbers.map(num => {
+                switch (num) {
+                    case 1:
+                        return "Monday";
+                    case 2:
+                        return "Tuesday";
+                    case 3:
+                        return "Wednesday";
+                    case 4:
+                        return "Thursday";
+                    case 5:
+                        return "Friday";
+                    case 6:
+                        return "Saturday";
+                    case 7:
+                        return "Sunday";
+                    default:
+                        return "Invalid Number";
+                }
+            });
+        }
+
+        function convertToWeekdays() {
+            const inputNumbers = document.getElementById('numbers').value.split(',').map(Number);
+            const weekdays = weekNumbersToWords(inputNumbers);
+            document.getElementById('output').textContent = weekdays.join(', ');
+        }
+    </script>
+</body>
+
+</html>

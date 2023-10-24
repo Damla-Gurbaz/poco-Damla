@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getLastValue</title>
+    <style>
+        #arrayInput {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <label for="arrayInput">Enter Array (e.g. Monday,Tuesday,Wednesday):</label>
+        <input type="text" id="arrayInput" placeholder="Enter comma-separated values">
+        <button onclick="displayLastValue()">Show Result</button>
+    </div>
+
+    <p id="result"></p>
+
+    <script>
+        function getLastValue(arr) {
+            arr.sort();
+            return arr[arr.length - 1];
+        }
+
+        function displayLastValue() {
+            const inputValue = document.getElementById("arrayInput").value;
+            const inputArray = inputValue.split(',');
+            const result = getLastValue(inputArray);
+            document.getElementById("result").textContent = "Result: " + result;
+        }
+    </script>
+
+</body>
+
+</html>

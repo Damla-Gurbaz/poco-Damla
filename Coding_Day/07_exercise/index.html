@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Reverser</title>
+</head>
+<body>
+    <h2>Number Reverser</h2>
+    <label for="numberInput">Enter a number: </label>
+    <input type="number" id="numberInput">
+    <button onclick="showReversed()">Reverse</button>
+    <p><strong>Reversed Number:</strong> <span id="result"></span></p>
+
+    <script>
+        function reverseNumber(n) {
+            const isNegative = n < 0;
+            const reversed = parseInt(String(Math.abs(n)).split('').reverse().join(''), 10);
+            return isNegative ? -reversed : reversed;
+        }
+
+        function showReversed() {
+            const input = document.getElementById('numberInput').value;
+            const result = reverseNumber(parseInt(input));
+            document.getElementById('result').textContent = result;
+        }
+    </script>
+</body>
+</html>
