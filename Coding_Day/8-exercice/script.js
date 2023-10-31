@@ -18,8 +18,33 @@ const questions = [
             { text: '<!-- -->', correct: false },
             { text: '-->', correct: false }
         ]
+    },
+    {
+        question: 'Which HTML tag is used to link a CSS file?',
+        answers: [
+            { text: '<link>', correct: true },
+            { text: '<css>', correct: false },
+            { text: '<style>', correct: false }
+        ]
+    },
+    {
+        question: 'In CSS, which symbol is used to target a class?',
+        answers: [
+            { text: '.', correct: true },
+            { text: '#', correct: false },
+            { text: '@', correct: false }
+        ]
+    },
+    {
+        question: 'Which of the following is a JavaScript library?',
+        answers: [
+            { text: 'Bootstrap', correct: false },
+            { text: 'jQuery', correct: true },
+            { text: 'Sass', correct: false }
+        ]
     }
 ];
+
 
 questions.sort(() => Math.random() - 0.5);
 

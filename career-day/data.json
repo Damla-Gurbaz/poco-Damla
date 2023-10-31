@@ -1,0 +1,30 @@
+[
+    {
+    "Name": "EFG Bank",
+    "Contact Persons":"Bianca Soldà",
+    "Company Size":"",
+    "Duration":"",
+    "Domain":"IT Service Management department",
+    "Number_of_internship":2,
+    "Location":"3, Avenue de Rumine - 1005 Lausanne",
+    "Positions":"IT Suporter",
+    "Skills":"",
+    "Website":"https://www.efginternational.com/ch",
+    "Interview Languages":"English",
+    
+    },
+    {
+        "Name": "Exoscale",
+        "Location":"3, Avenue de Rumine - 1005 Lausanne",
+        "Positions":"IT Suporter",
+        "Skills":"",
+        "Duration":"",
+        "Number_of_internship":2,
+        "Company Size":75,
+        "Website":"https://www.efginternational.com/ch",
+        "Domain":"IT Service Management department",
+        "Interview Languages":"English",
+        "Contact Persons":"Loic Lambiel"
+        }
+
+]
